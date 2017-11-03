@@ -2151,9 +2151,10 @@ class VBA_Scanner(object):
                 (self.code_dridex, 'Dridex'),
                 (self.code_vba, 'VBA expression'),
         ):
-            self.autoexec_keywords += detect_autoexec(code, obfuscation)
-            self.suspicious_keywords += detect_suspicious(code, obfuscation)
-            self.iocs += detect_patterns(code, obfuscation)
+            pass
+            #self.autoexec_keywords += detect_autoexec(code, obfuscation)
+            #self.suspicious_keywords += detect_suspicious(code, obfuscation)
+            #self.iocs += detect_patterns(code, obfuscation)
 
         # If hex-encoded strings were discovered, add an item to suspicious keywords:
         if self.hex_strings:
